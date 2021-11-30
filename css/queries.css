@@ -1,0 +1,94 @@
+@media screen and (max-width: 1399.98px) {
+  section.hero-section {
+    background-image: url(../assets/img/baner-dec-left.png),
+      url(../assets/img/banner-right-image.png);
+    background-position: top left, top right;
+    background-size: 15%, 50%;
+    background-repeat: no-repeat;
+  }
+  div.form{
+  margin-left: 0;
+  }
+  .gmap{
+    width: 100vw;
+  }
+ .gmap iframe{
+    width: auto;
+  }
+  .form{
+    width: 100vw;
+  }
+}
+
+@media (min-width: 991.98px) {
+  nav div.container button#toggle-down {
+    display: none !important;
+  }
+
+
+}
+
+@media screen and (max-width: 767.98px) {
+  section.hero-section div.welcome {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  section.hero-section div.welcome h1,
+  section.hero-section div.welcome h6,
+  section.hero-section div.welcome p {
+    width: 100% !important;
+    text-shadow: 1px 1px rgb(228, 228, 228);
+  }
+
+  .rocket , .rocket .input-group {
+    border-radius: 50px!important;
+    -webkit-border-radius: 50px!important;
+    -moz-border-radius: 50px!important;
+    -ms-border-radius: 50px!important;
+    -o-border-radius: 50px!important;
+}
+
+
+.rocket input{
+    min-width: 100%!important;
+    margin-bottom: 0.5rem;
+  }
+
+  .rocket img{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section.hero-section div.welcome .button {
+    font-size: small;
+    padding: 0.5rem 1rem;
+  }
+  .rocket{
+      padding: 1rem!important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section.hero-section div.welcome h1,
+  section.hero-section div.welcome h6,
+  section.hero-section div.welcome p,
+  section.hero-section div.welcome h6 {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section.hero-section div.welcome .button {
+    font-size: small;
+    padding: 0;
+    width: 90%;
+  }
+  div.welcome {
+    padding: 0.25rem !important;
+  }
+}

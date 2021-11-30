@@ -1,0 +1,334 @@
+/* inex for project 6 */
+/* 
+
+[ 1 ] variables & generals =============>
+
+[ 2 ] colors ===========================>
+
+[ 3 ] nav-bar ==========================>
+
+[ 4 ] hero section =====================>
+
+[ 5 ] service section ==================>
+
+[ 6 ] image section ====================>
+
+[ 7 ] prices section ===================>
+
+[ 8 ] youtube section ==================>
+
+[ 9 ] map section ======================>
+
+*/
+
+/* [ 1 ] variables ================================================================================================================================*/
+@import "queries.css";
+:root {
+  --orange: rgba(255, 81, 0, 0.959);
+  --orangelight: rgba(255, 81, 0, 0.322);
+  --sky: rgb(0, 162, 255);
+}
+
+body {
+}
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.fw-boldest {
+  font-weight: 900;
+}
+
+/* [ 2 ] colors ===================================================================================================================================*/
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-orangelight {
+  color: var(--orangelight);
+}
+
+.bg-lightorange {
+  background-color: var(--orangelight);
+}
+
+.text-sky {
+  color: var(--sky);
+}
+
+.bg-sky {
+  background-color: var(--sky);
+}
+
+.activated {
+  color: var(--orange) !important;
+}
+
+/* [ 3 ] nav-bar =================================================================================================================================*/
+.contact-btn {
+  letter-spacing: 1px;
+}
+
+/* [ 4 ] hero section =============================================================================================================================*/
+
+.hero-section {
+  background-image: url(../assets/img/baner-dec-left.png),
+    url(../assets/img/banner-right-image.png);
+  background-position: top left, top right;
+  background-size: 15%, 40%;
+  background-repeat: no-repeat;
+}
+
+.hero-section .welcome {
+  padding: 3vw;
+}
+
+.hero-section .welcome .round-call {
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.hero-section .welcome .button {
+  max-width: 445px;
+  min-width: 307px;
+}
+
+.hero-section .welcome h1,
+.hero-section .welcome h6,
+.hero-section .welcome p,
+.hero-section .welcome h6,
+.hero-section .welcome .button,
+.hero-section .welcome ul {
+  display: inline-block;
+  padding: 0.5rem 4rem;
+}
+
+.navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+}
+
+/* [ 5 ] service section ========================================================================================================================*/
+
+section.service {
+  background-image: url(../assets/img/services-left-dec.png),
+    url(../assets/img/services-right-dec.png);
+  background-position: left top, right bottom;
+  background-size: 20%;
+  background-repeat: no-repeat;
+}
+
+section.service .title p:first-child {
+  margin-bottom: 0.5rem;
+}
+
+button.navigator {
+  background-color: var(--orange) !important;
+  height: 5px !important;
+  width: 5px !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* [ 6 ] image section ========================================================================================================================*/
+section.image {
+  background-image: url(../assets/img/portfolio-left-dec.png);
+  background-position: 5% top;
+  background-size: 20%;
+  background-repeat: no-repeat;
+}
+
+section.image .title p:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.service .carousel-indicators {
+  bottom: -60px !important;
+}
+
+section.image .carousel-indicators {
+  bottom: -50px;
+}
+
+.wider {
+  /* max-width: 14rem; */
+}
+
+.image .carousel-control-prev-icon,
+.image .carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  padding: 1rem;
+  background-color: var(--orange);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* [ 7 ] prices section ========================================================================================================================*/
+
+section.prices {
+  background-image: url(../assets/img/tables-left-dec.png),
+    url(../assets/img/tables-right-dec.png);
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+  background-size: 20%;
+}
+
+section.prices .rounderer {
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+section.prices #c1 {
+  background-image: url(../assets/img/first-plan-bg.png);
+  background-repeat: no-repeat;
+}
+
+section.prices #c2 {
+  background-image: url(../assets/img/second-plan-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.prices #c3 {
+  background-image: url(../assets/img/third-plan-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rocket {
+  background-image: url(../assets/img/subscribe-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100% !important;
+  height: fit-content;
+}
+
+.rocket img {
+  right: 0;
+  bottom: 60%;
+}
+
+.rocket input {
+  margin-bottom: 0.5rem;
+}
+
+.rocket input::placeholder {
+  text-transform: capitalize;
+}
+
+/* [ 8 ] youtube section ====================================================================================================================*/
+
+.youtube {
+  background-image: url(../assets/img/videos-left-dec.png),
+    url(../assets/img/videos-right-dec.png);
+  background-repeat: no-repeat;
+  background-position: left center, right center;
+}
+
+.channel iframe{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.orasqr{
+  background-image: url(../assets/img/hover-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 0 20px 0;
+  -webkit-border-radius: 20px 0 20px 0;
+  -moz-border-radius: 20px 0 20px 0;
+  -ms-border-radius: 20px 0 20px 0;
+  -o-border-radius: 20px 0 20px 0;
+}
+
+.devider{
+  background-image: linear-gradient(to bottom right, rgba(255, 38, 0, 0.808), rgba(255, 115, 0, 0.884));
+  height: 8rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.t1{
+  background-image: url(../assets/img/video-big-thumb-02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.t2{
+  background-image: url(../assets/img/video-thumb-03.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.t3{
+  background-image: url(../assets/img/video-thumb-04.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* [ 9 ] youtube section ====================================================================================================================*/
+
+.map{
+  background-image: url(../assets/img/contact-left-dec.png),url(../assets/img/contact-dec.png),url(../assets/img/footer-dec.png);
+  background-repeat: no-repeat;
+  background-position: top left,right center,100% 80%;
+}
+
+
+.rdius{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.form{
+  margin-left: -7rem;
+  background-image: url(../assets/img/contact-form-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 10;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.social svg.svg-inline--fa{
+  height:1.5rem;
+  width: 1.5rem;
+}
+
+div.footer{
+  margin-top: 15rem!important;
+}
